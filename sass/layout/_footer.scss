@@ -1,0 +1,125 @@
+.footer {
+    background-color: var(--dark-theme-background);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__logo {
+    margin-bottom: 20px;
+}
+
+
+.adress {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.adress__physical {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    color: var(--complementary-color);
+}
+
+.adress__link {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--adress-link-color);
+    font-style: normal;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.address__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.social-wrapper__subtitle {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: var(--complementary-color);
+}
+
+.social-wrapper {
+    width: 206px;
+    height: 80px;
+}
+
+.social-wrapper__link {
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+
+.social-wrapper__icon {
+    fill: var(--complementary-color);
+}
+
+.footer__container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.subscription-form__subtitle {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: var(--complementary-color);
+    font-weight: 700;
+}
+
+.subscription-form__input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: var(--dark-theme-background);
+    padding: 15px 16px;
+    color: var(--complementary-color);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &::placeholder {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+
+    }
+
+    &:focus {
+        outline: none;
+        border-color: var(--accent-color);
+    }
+}
+
+.subscription-form__btn {
+    @extend %align;
+    justify-content: center;
+    padding: 10px 13px;
+    margin-left: 12px;
+}
+
+.subscription-form__icon {
+    margin-left: 10px;
+}
+
+.subscription-wrapper {
+    width: 570px;
+    height: 86px;
+}
+
+.subscription-form__item {
+    display: flex;
+}
