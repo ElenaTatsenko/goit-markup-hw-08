@@ -2,42 +2,70 @@
     background-color: var(--light-theme-background);
 }
 
-.our-team__list {
-    display: flex;
-    margin-left: -30px;
-    margin-top: -30px;
-}
-
-.our-team__content-wrapper {
-    margin-top: 30px;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-bottom: 30px;
-}
-
-.our-team__item {
-    background-color: var(--complementary-color);
-    flex-basis: calc((100 - 120px / 4));
-    margin-left: 30px;
-    margin-top: 30px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-}
-
 .our-team__subtitle {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.19;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-align: center;
     margin-bottom: 10px;
 }
 
+.our-team__content-wrapper {
+    margin-top: 30px;
+    padding-left: 122px;
+    padding-right: 122px;
+    padding-bottom: 24px;
+}
+
+.our-team__item {
+    background-color: var(--complementary-color);
+    margin-top: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
 .our-team__description {
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-align: center;
     margin-bottom: 16px;
+}
+
+//768px +
+@media screen and (min-width: 768px) {
+    .our-team__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+        margin-top: -30px;
+    }
+    .our-team__content-wrapper {
+        padding-left: 74px;
+        padding-right: 74px;
+    }
+
+    .our-team__item {
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+}
+//1200px +
+@media screen and (min-width: 1200px) {
+    .our-team__list {
+        flex-wrap: nowrap;
+    }
+    .our-team__subtitle {
+        line-height: 1.19;
+    }
+    .our-team__content-wrapper {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .our-team__item {
+        margin-left: 30px;
+        margin-top: 30px;
+        flex-basis: calc((100 - 120px / 4));
+    }
 }
