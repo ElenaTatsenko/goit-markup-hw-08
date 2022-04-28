@@ -42,6 +42,14 @@ img {
 .link {
     text-decoration: none;
 }
+
+//480px +
+.section {
+    padding: 60px 0px;
+}
+//1200px +
+@media screen and (min-width: 1200px) {
 .section {
     padding: 94px 0px;
+}
 }
