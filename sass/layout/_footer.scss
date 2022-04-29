@@ -4,10 +4,18 @@
     padding-bottom: 60px;
 }
 
+.footer__container {
+    margin-left: auto;
+    margin-right: auto;
+}
+.adress-wrapper {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
 .footer__logo {
     margin-bottom: 20px;
 }
-
 
 .adress {
     font-size: 14px;
@@ -35,8 +43,139 @@
         color: var(--accent-color);
     }
 }
-
 .address__item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.social-wrapper__subtitle {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: var(--complementary-color);
+}
+.social-wrapper {
+    width: 206px;
+    height: 80px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+}
+
+.social-wrapper__link {
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+
+.social-wrapper__icon {
+    fill: var(--complementary-color);
+}
+
+.subscription-form__subtitle {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: var(--complementary-color);
+    font-weight: 700;
+    text-align: center;
+}
+.subscription-form__input {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: var(--dark-theme-background);
+    padding: 15px 16px;
+    color: var(--complementary-color);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &::placeholder {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:focus {
+        outline: none;
+        border-color: var(--accent-color);
+    }
+}
+.subscription-form__btn {
+    @extend %align;
+    justify-content: center;
+    padding: 10px 13px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.subscription-form__icon {
+    margin-left: 10px;
+}
+
+//768px +
+@media screen and (min-width: 768px) {
+    .footer__container {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .subscription-form__input {
+        width: 450px;
+    }
+    .social-wrapper {
+        margin-left: 165px;
+        margin-right: 0;
+        }
+}
+//1200px +
+@media screen and (min-width: 1200px) {
+    .footer__container {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    .adress-wrapper {
+        text-align: left;
+        margin-bottom: 0;
+    }
+    .address__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+    .social-wrapper {
+        text-align: left;
+        margin: 0;
+    }
+    .subscription-form__subtitle {
+        text-align: left;
+    }
+    .subscription-form__input {
+        width: 358px;
+        height: 50px;
+    }
+    .subscription-form__btn {
+        margin-left: 12px;
+        margin-right: 0;
+        height: 50px;
+    }
+    .subscription-wrapper {
+        width: 570px;
+        height: 86px;
+    }
+    .subscription-form__item {
+        display: flex;
+    }
+}
+
+
+/*.address__item:not(:last-child) {
     margin-bottom: 9px;
 }
 
@@ -122,4 +261,4 @@
 
 .subscription-form__item {
     display: flex;
-}
+}*/
