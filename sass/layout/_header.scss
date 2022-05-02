@@ -37,6 +37,7 @@
     
     .mobile-menu {
         position: absolute;
+        z-index: 1;
         top: 0;
         left: 0;
         width: 100%;
@@ -81,6 +82,10 @@
         padding-bottom: 48px;
         padding-left: 40px;
         margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
     }
     
     .mobile-menu__link {
@@ -102,9 +107,7 @@
         margin-bottom: 32px;
     }
     
-    .mobile-menu__list {
-        padding-bottom: 302px;
-    }
+     
     
     .mobile-menu__contact-link {
         font-weight: 500;
